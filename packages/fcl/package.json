@@ -31,9 +31,8 @@
     "alpha": "npm publish --tag alpha",
     "prepublishOnly": "npm install && npm test && npm run build",
     "test": "jest",
-    "build": "microbundle",
+    "build": "webpack --mode=production",
     "test:watch": "jest --watch",
-    "start": "microbundle watch"
   },
   "dependencies": {
     "@onflow/interaction": "0.0.11",
